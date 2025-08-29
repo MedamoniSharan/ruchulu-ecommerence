@@ -14,7 +14,20 @@ const PLACEHOLDER_IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA
 const getImageUrl = (product) => {
   const img = product?.image || (Array.isArray(product?.images) && product.images[0]);
   if (!img) return PLACEHOLDER_IMAGE;
-  return img.startsWith('http') ? img : BACKEND_URL + img.replace(/^\/+/, '');
+  if (img.startsWith('http')) return img;
+  
+  // For backend uploaded images (uploads/products/...)
+  if (img.startsWith('uploads/')) {
+    return `${BACKEND_URL}/${img}`;
+  }
+  
+  // For local public images
+  if (img.startsWith('/')) {
+    return img; // Already a full path
+  }
+  
+  // Default case
+  return `/${img}`;
 };
 
 const Loader = ({ size = 'large', text = 'Loading...' }) => {

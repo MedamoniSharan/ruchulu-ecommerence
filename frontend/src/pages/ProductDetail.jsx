@@ -11,8 +11,19 @@ const BACKEND_URL = config.BACKEND_URL;
 const getImageUrl = (img) => {
   if (!img) return '/placeholder.png';
   if (img.startsWith('http')) return img;
-  // Remove any leading slashes and ensure proper path construction
-  return BACKEND_URL + img.replace(/^\/+/, '');
+  
+  // For backend uploaded images (uploads/products/...)
+  if (img.startsWith('uploads/')) {
+    return `${BACKEND_URL}/${img}`;
+  }
+  
+  // For local public images
+  if (img.startsWith('/')) {
+    return img; // Already a full path
+  }
+  
+  // Default case
+  return `/${img}`;
 };
 
 const ProductDetail = () => {

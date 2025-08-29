@@ -10,7 +10,20 @@ import { BACKEND_URL } from '../config';
 
 const getImageUrl = (img) => {
   if (!img) return '/placeholder.png';
-  return img.startsWith('http') ? img : BACKEND_URL + img.replace(/^\/+/, '');
+  if (img.startsWith('http')) return img;
+  
+  // For backend uploaded images (uploads/products/...)
+  if (img.startsWith('uploads/')) {
+    return `${BACKEND_URL}/${img}`;
+  }
+  
+  // For local public images
+  if (img.startsWith('/')) {
+    return img; // Already a full path
+  }
+  
+  // Default case
+  return `/${img}`;
 };
 
 const Cart = () => {
