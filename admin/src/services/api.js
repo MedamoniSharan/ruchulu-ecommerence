@@ -41,28 +41,28 @@ api.interceptors.response.use(
 const adminApi = {
   // Auth
   auth: {
-    login: (credentials) => api.post('/api/auth/login', credentials),
-    logout: () => api.post('/api/auth/logout'),
-    getProfile: () => api.get('/api/users/profile'),
+    login: (credentials) => api.post('/auth/login', credentials),
+    logout: () => api.post('/auth/logout'),
+    getProfile: () => api.get('/users/profile'),
   },
 
   // Users
   users: {
-    getAll: () => api.get('/api/users'),
-    getById: (id) => api.get(`/api/users/${id}`),
-    create: (data) => api.post('/api/users', data),
-    update: (id, data) => api.put(`/api/users/${id}`, data),
-    updateStatus: (id, isActive) => api.put(`/api/users/${id}/status`, { isActive }),
-    delete: (id) => api.delete(`/api/users/${id}`)
+    getAll: () => api.get('/users'),
+    getById: (id) => api.get(`/users/${id}`),
+    create: (data) => api.post('/users', data),
+    update: (id, data) => api.put(`/users/${id}`, data),
+    updateStatus: (id, isActive) => api.put(`/users/${id}/status`, { isActive }),
+    delete: (id) => api.delete(`/users/${id}`)
   },
 
   // Products
   products: {
-    getAll: () => api.get('/api/products'),
-    getById: (id) => api.get(`/api/products/${id}`),
+    getAll: () => api.get('/products'),
+    getById: (id) => api.get(`/products/${id}`),
     create: (formData) => {
       const token = localStorage.getItem('adminToken');
-      return api.post('/api/products', formData, {
+      return api.post('/products', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`
@@ -71,31 +71,31 @@ const adminApi = {
     },
     update: (id, formData) => {
       const token = localStorage.getItem('adminToken');
-      return api.put(`/api/products/${id}`, formData, {
+      return api.put(`/products/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`
         }
       });
     },
-    delete: (id) => api.delete(`/api/products/${id}`),
+    delete: (id) => api.delete(`/products/${id}`),
   },
 
   // Orders
   orders: {
-    getAll: () => api.get('/api/orders/admin/all'),
-    getById: (id) => api.get(`/api/orders/admin/${id}`),
-    updateStatus: (id, status) => api.put(`/api/orders/admin/status/${id}`, { status }),
+    getAll: () => api.get('/orders/admin/all'),
+    getById: (id) => api.get(`/orders/admin/${id}`),
+    updateStatus: (id, status) => api.put(`/orders/admin/status/${id}`, { status }),
   },
 
   // Subscriptions
   subscriptions: {
-    getAll: () => api.get('/api/subscriptions'),
-    getById: (id) => api.get(`/api/subscriptions/${id}`),
-    updateStatus: (id, status) => api.put(`/api/subscriptions/${id}/status`, { status }),
-    cancel: (id) => api.post(`/api/subscriptions/${id}/cancel`),
-    pause: (id) => api.post(`/api/subscriptions/${id}/pause`),
-    resume: (id) => api.post(`/api/subscriptions/${id}/resume`),
+    getAll: () => api.get('/subscriptions'),
+    getById: (id) => api.get(`/subscriptions/${id}`),
+    updateStatus: (id, status) => api.put(`/subscriptions/${id}/status`, { status }),
+    cancel: (id) => api.post(`/subscriptions/${id}/cancel`),
+    pause: (id) => api.post(`/subscriptions/${id}/pause`),
+    resume: (id) => api.post(`/subscriptions/${id}/resume`),
   },
 
 Dashboard:{
