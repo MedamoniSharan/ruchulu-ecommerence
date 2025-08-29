@@ -1,7 +1,8 @@
 # Frontend build configuration
 [build]
-  publish = "frontend/dist"
-  command = "cd frontend && npm install && npm run build"
+  base = "frontend"
+  publish = "dist"
+  command = "npm install && npm run build"
 
 # SPA routing redirects
 [[redirects]]
