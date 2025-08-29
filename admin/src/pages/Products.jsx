@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import toast from "react-hot-toast";
 import adminApi from "../services/api";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+import { config } from '../env.config.js';
+
+const API_URL = config.API_URL;
 
 const Products = () => {
   const [products, setProducts] = useState([]);

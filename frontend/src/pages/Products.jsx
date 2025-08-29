@@ -6,7 +6,9 @@ import { toast } from 'react-hot-toast';
 import { products as productsApi } from '../services/api';
 import { mockProducts } from '../data/mockProducts';
 
-const BACKEND_URL = 'http://localhost:5001/';
+import { config } from '../../env.config.js';
+
+const BACKEND_URL = config.BACKEND_URL;
 
 // Helper function to get image URL
 const getImageUrl = (img) => {

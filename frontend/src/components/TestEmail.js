@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Card, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
-import { Button, Card, Alert, Spinner, Form, Row, Col } from 'react-bootstrap';
+import { config } from '../env.config.js';
 
 const TestEmail = () => {
     const [loading, setLoading] = useState(false);
@@ -28,7 +29,9 @@ const TestEmail = () => {
     useEffect(() => {
         const fetchRecentOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:5001/api/orders/recent');
+                // Move import to top-level, so just use config here
+                // (Assumes: import { config } from '../env.config.js'; is at the top of the file)
+                const response = await axios.get(`${config.API_URL}/orders/recent`);
                 setRecentOrders(response.data.orders);
             } catch (err) {
                 console.error('Error fetching recent orders:', err);
@@ -68,7 +71,7 @@ const TestEmail = () => {
             setError(null);
             setResult(null);
 
-            const response = await axios.get('http://localhost:5001/api/test/test-email');
+            const response = await axios.get(`${config.API_URL}/test/test-email`);
             setResult(response.data);
         } catch (err) {
             setError(err.response?.data || { error: 'Failed to test email' });

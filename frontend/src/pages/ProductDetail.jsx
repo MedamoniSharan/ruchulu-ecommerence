@@ -5,7 +5,9 @@ import { useCart } from '../context/CartContext';
 import { toast } from 'react-hot-toast';
 import { products as productsApi } from '../services/api';
 
-const BACKEND_URL = 'http://localhost:5001/';
+import { config } from '../../env.config.js';
+
+const BACKEND_URL = config.BACKEND_URL;
 const getImageUrl = (img) => {
   if (!img) return '/placeholder.png';
   if (img.startsWith('http')) return img;
