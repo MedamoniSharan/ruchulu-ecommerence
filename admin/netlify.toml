@@ -1,8 +1,7 @@
 # Admin Panel Build Configuration
 [build]
-  base = "."
-  publish = "dist"
-  command = "npm run build"
+  publish = "admin/dist"
+  command = "cd admin && npm install && npm run build"
 
 # SPA routing redirects for admin
 [[redirects]]
