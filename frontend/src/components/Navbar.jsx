@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-yellow-300 shadow-md py-2' : 'bg-yellow-300/80 backdrop-blur-sm py-2'
+         'bg-gradient-primary shadow-lg py-2' 
       }`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
@@ -77,7 +77,7 @@ const Navbar = () => {
                   alt="pickles Logo" 
                   className="h-14 w-auto transition-transform duration-300 hover:scale-105"
                 />
-                <span className="text-xl font-bold text-black ml-3">Ma Amma Ruchulu</span>
+                <span className="text-xl font-bold text-white ml-3">Ma Amma Ruchulu</span>
               </Link>
             </div>
 
@@ -89,8 +89,8 @@ const Navbar = () => {
                   to={link.path}
                   className={`text-lg font-medium transition-colors ${
                     location.pathname === link.path
-                      ? 'text-primary-600'
-                      : 'text-black hover:text-primary-600'
+                      ? 'text-white font-semibold'
+                      : 'text-white/90 hover:text-white'
                   }`}
                 >
                   {link.name}

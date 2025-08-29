@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <p className="flex items-center">
                       <span className="font-semibold mr-2">Address:</span>
-                      4-7-62/2, Shivaji nagar, Attapur, Hyderabad, 500048.
+                      4-7-62/2, Shivaji nagar, Attapur, Hyderabad, 500148.
                     </p>
                   </div>
                 </div>

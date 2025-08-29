@@ -86,7 +86,7 @@ const Contact = () => {
         />
       ),
       title: 'Address',
-      content: '4-7-62/2, Shivaji nagar, Attapur, Hyderabad-500048',
+      content: '4-7-62/2, Shivaji nagar, Attapur, Hyderabad-500148',
       link: 'https://maps.app.goo.gl/BV9XeQPSCLEXyyky7'
     },
     {

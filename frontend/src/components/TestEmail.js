@@ -17,7 +17,7 @@ const TestEmail = () => {
             street: '123 Main Street',
             city: 'Hyderabad',
             state: 'Telangana',
-            pincode: '500001'
+            pincode: '500101'
         },
         deliveryDate: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().split('T')[0],
         deliveryTime: '14:00',
@@ -28,7 +28,7 @@ const TestEmail = () => {
     useEffect(() => {
         const fetchRecentOrders = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/orders/recent');
+                const response = await axios.get('http://localhost:5001/api/orders/recent');
                 setRecentOrders(response.data.orders);
             } catch (err) {
                 console.error('Error fetching recent orders:', err);
@@ -68,7 +68,7 @@ const TestEmail = () => {
             setError(null);
             setResult(null);
 
-            const response = await axios.get('http://localhost:5000/api/test/test-email');
+            const response = await axios.get('http://localhost:5001/api/test/test-email');
             setResult(response.data);
         } catch (err) {
             setError(err.response?.data || { error: 'Failed to test email' });

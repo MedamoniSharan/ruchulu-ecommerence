@@ -7,18 +7,54 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Warm, appetizing colors perfect for a restaurant website
         primary: {
-          50: '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
+          50: '#fef7f0',
+          100: '#fdecd4',
+          200: '#fbd5a8',
+          300: '#f8b871',
+          400: '#f59338',
+          500: '#f2751a',
+          600: '#e35a0f',
+          700: '#bc4310',
+          800: '#963514',
+          900: '#7a2e14',
         },
+        // Rich, warm accent colors
+        accent: {
+          50: '#fdf4f3',
+          100: '#fbe8e6',
+          200: '#f7d1cd',
+          300: '#f0b0a8',
+          400: '#e68578',
+          500: '#d96b5c',
+          600: '#c55547',
+          700: '#a44439',
+          800: '#873a32',
+          900: '#71332d',
+        },
+        // Warm neutral tones
+        warm: {
+          50: '#fafaf9',
+          100: '#f5f5f4',
+          200: '#e7e5e4',
+          300: '#d6d3d1',
+          400: '#a8a29e',
+          500: '#78716c',
+          600: '#57534e',
+          700: '#44403c',
+          800: '#292524',
+          900: '#1c1917',
+        },
+        // Food-inspired colors
+        food: {
+          spice: '#d97706',      // Warm orange
+          herb: '#059669',       // Fresh green
+          cream: '#fef3c7',      // Light cream
+          honey: '#f59e0b',      // Golden honey
+          berry: '#dc2626',      // Rich red
+          earth: '#92400e',      // Deep brown
+        }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

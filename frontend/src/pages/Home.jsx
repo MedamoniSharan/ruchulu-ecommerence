@@ -10,7 +10,7 @@ import apiService from '../api/apiService';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200"
+    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200"
     aria-label="Previous slide"
   >
     <svg
@@ -32,7 +32,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200"
+    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200"
     aria-label="Next slide"
   >
     <svg
@@ -55,7 +55,7 @@ const NextArrow = ({ onClick }) => (
 const CustomDot = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="w-3 h-3 mx-1 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity duration-200"
+    className="w-3 h-3 mx-1 rounded-full bg-white opacity-60 hover:opacity-100 transition-opacity duration-200"
     aria-label="Go to slide"
   />
 );
@@ -144,7 +144,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 5001,
     pauseOnHover: true,
     responsive: [
       {

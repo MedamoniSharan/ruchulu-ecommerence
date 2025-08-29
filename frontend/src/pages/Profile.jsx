@@ -235,7 +235,7 @@ const Profile = () => {
         toast.error('Too many requests. Please wait a moment and try again.');
         setTimeout(() => {
           setFetchAttempts(0); // Reset attempts after delay
-        }, 5000);
+        }, 5001);
       } else {
         toast.error('Failed to load user data. Please try again later.');
       }
