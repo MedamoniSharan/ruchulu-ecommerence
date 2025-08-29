@@ -1,0 +1,11 @@
+# Admin Panel Build Configuration
+[build]
+  base = "."
+  publish = "dist"
+  command = "npm run build"
+
+# SPA routing redirects for admin
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
