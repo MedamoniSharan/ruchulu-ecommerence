@@ -1,6 +1,7 @@
 [build]
-  publish = "frontend/dist"
-  command = "cd frontend && npm run build"
+  base = "frontend"
+  publish = "dist"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
@@ -8,8 +9,9 @@
   status = 200
 
 [context.admin]
-  publish = "admin/dist"
-  command = "cd admin && npm run build"
+  base = "admin"
+  publish = "dist"
+  command = "npm run build"
 
 [context.admin.redirects]
   from = "/*"
