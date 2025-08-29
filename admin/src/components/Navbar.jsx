@@ -49,9 +49,8 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-4">
             <Link to="/" className="flex items-center space-x-3">
-              <img src="/images/logo.png" alt="logo" className="w-10 h-auto" />
               <span className="text-xl font-extrabold text-red-600">
-                MA AMMA RUCHULU
+                D Vintage Spices
               </span>
             </Link>
           </div>

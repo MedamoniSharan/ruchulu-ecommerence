@@ -85,7 +85,7 @@ const Payment = () => {
           key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_rtsWNkrDp1dlT7',
           amount: razorpayOrder.data.amount,
           currency: razorpayOrder.data.currency,
-          name: 'Ma Amma Ruchulu',
+          name: 'D Vintage Spices',
           description: 'Payment for your order',
           order_id: razorpayOrder.data.orderId,
           handler: async function (response) {

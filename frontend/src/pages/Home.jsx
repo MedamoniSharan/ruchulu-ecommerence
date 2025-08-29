@@ -385,19 +385,19 @@ const Home = () => {
                 <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 bg-yellow-400 py-2 px-4 rounded-lg inline-block mx-auto block">Simple and Clear Options</h2>
                 <div className="space-y-3">
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
-                    <h3 className="text-base font-medium text-gray-800">"Ma Amma Ruchulu Pickles – A Taste of Tradition in Every Bite!"</h3>
+                    <h3 className="text-base font-medium text-gray-800">"D Vintage Spices – A Taste of Tradition in Every Bite!"</h3>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
-                    <h3 className="text-base font-medium text-gray-800">"Ma Amma Ruchulu Pickles – All Types, All Tastes, All Love!"</h3>
+                    <h3 className="text-base font-medium text-gray-800">"D Vintage Spices – All Types, All Tastes, All Love!"</h3>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
-                    <h3 className="text-base font-medium text-gray-800">"From Our Home to Yours – Ma Amma Ruchulu Pickles."</h3>
+                    <h3 className="text-base font-medium text-gray-800">"From Our Home to Yours – D Vintage Spices."</h3>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
-                    <h3 className="text-base font-medium text-gray-800">"Ma Amma Ruchulu – Authentic Pickles, Just Like Mom Makes."</h3>
+                    <h3 className="text-base font-medium text-gray-800">"D Vintage Spices – Authentic Pickles, Just Like Mom Makes."</h3>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
-                    <h3 className="text-base font-medium text-gray-800">"Every Jar, a Flavorful Memory – Ma Amma Ruchulu Pickles."</h3>
+                    <h3 className="text-base font-medium text-gray-800">"Every Jar, a Flavorful Memory – D Vintage Spices."</h3>
                   </div>
                   <div className="bg-gray-50 p-3 rounded-lg hover:shadow-md transition-shadow duration-300">
                     <h3 className="text-base font-medium text-gray-800">"Andariki Kavalsina Avakaya ikkada ready!"</h3>
@@ -453,12 +453,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Maa Amma Ruchulu */}
+      {/* Why D Vintage Spices */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 bg-yellow-300 -mt-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">Why Choose Maa Amma Ruchulu?</h2>
-            <p className="text-base text-gray-600">Experience the difference with our premium pickle products</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Why Choose D Vintage Spices?</h2>
+            <p className="text-base text-gray-600">Experience the difference with our premium vintage spices and pickles</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {whyAkshiPoints.map((point) => (

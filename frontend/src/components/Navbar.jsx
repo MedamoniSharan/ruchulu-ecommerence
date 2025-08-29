@@ -69,15 +69,10 @@ const Navbar = () => {
       }`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
+            {/* Brand Name */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <img 
-                  src="/images/Logos/MAR.png" 
-                  alt="pickles Logo" 
-                  className="h-14 w-auto transition-transform duration-300 hover:scale-105"
-                />
-                <span className="text-xl font-bold text-white ml-3">Ma Amma Ruchulu</span>
+                <span className="text-2xl font-bold text-white">D Vintage Spices</span>
               </Link>
             </div>
 

@@ -7,12 +7,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           {/* Company Info */}
           <div className="flex flex-col items-center space-y-4 w-full md:w-1/5">
-            <Link to="/" className="flex items-center">
-              <img src="/images/Logos/MAR.png" alt="MAR_logo" className="w-24 h-18 transition-transform duration-300 hover:scale-105" />
-            </Link>
-            <h3 className="text-4xl font-bold text-white">Ma Amma Ruchulu</h3>
+            <h3 className="text-4xl font-bold text-white">D Vintage Spices</h3>
             <p className="text-white/90 text-center max-w-xs">
-              Fresh pickle products delivered to your doorstep. Quality and convenience guaranteed.
+              Premium vintage spices and pickles delivered to your doorstep. Quality and tradition guaranteed.
             </p>
           </div>
 
@@ -136,7 +133,7 @@ const Footer = () => {
         {/* Copyright and Developer Credit */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="text-center text-black text-sm">
-            &copy; {new Date().getFullYear()} Ma Amma Ruchulu. All rights reserved. | Developed by{' '}
+            &copy; {new Date().getFullYear()} D Vintage Spices. All rights reserved. | Developed by{' '}
             <a 
               href="https://www.buildyourvision.in" 
               target="_blank" 
