@@ -1,19 +1,11 @@
+# Frontend build configuration
 [build]
   base = "frontend"
   publish = "dist"
   command = "npm run build"
 
+# SPA routing redirects
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[context.admin]
-  base = "admin"
-  publish = "dist"
-  command = "npm run build"
-
-[context.admin.redirects]
   from = "/*"
   to = "/index.html"
   status = 200
