@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import toast from "react-hot-toast";
 import adminApi from "../services/api";
 
-import { config } from '../env.config.js';
+import { config } from '../../env.config';
 
 const API_URL = config.API_URL;
 

@@ -49,7 +49,7 @@ const About = () => {
                   className="relative rounded-lg overflow-hidden h-64 group"
                 >
                   <img
-                    src="https://media.istockphoto.com/id/506283829/photo/jars-of-pickled-vegetables-in-the-garden-marinated-food.jpg?s=612x612&w=0&k=20&c=f_JBwYsZer1xUERCMvHnld7yXUxumC1Cm4bupSzFzGQ="
+                    src="/images/veg/veg1.jpg"
                     alt="Our Story"
                     className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                   />
@@ -70,11 +70,9 @@ const About = () => {
                 className="space-y-4 bg-gray-50 p-6 rounded-xl"
               >
                 <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                  <img 
-                    src="https://cdn-icons-png.flaticon.com/128/7198/7198217.png" 
-                    alt="Our Mission" 
-                    className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:scale-110"
-                  />
+                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Our Mission</h3>
                 <p className="text-gray-600">
@@ -89,11 +87,10 @@ const About = () => {
                 className="space-y-4 bg-gray-50 p-6 rounded-xl"
               >
                 <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                  <img 
-                    src="https://cdn-icons-png.flaticon.com/128/7653/7653862.png" 
-                    alt="Our Vision" 
-                    className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:scale-110"
-                  />
+                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Our Vision</h3>
                 <p className="text-gray-600">
@@ -108,11 +105,9 @@ const About = () => {
                 className="space-y-4 bg-gray-50 p-6 rounded-xl"
               >
                 <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                  <img 
-                    src="https://cdn-icons-png.flaticon.com/128/18866/18866935.png" 
-                    alt="Our Values" 
-                    className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:scale-110"
-                  />
+                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">Our Values</h3>
                 <p className="text-gray-600">

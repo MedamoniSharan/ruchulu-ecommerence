@@ -187,7 +187,7 @@ const Products = () => {
   const [showAddedToCartMessage, setShowAddedToCartMessage] = useState(false);
 
   const categories = [
-    { id: 'all', name: 'All Products', icon: 'https://cdn-icons-png.flaticon.com/128/6785/6785304.png', description: 'Browse all our delicious pickles and other food items.'},
+    { id: 'all', name: 'All Products', icon: '/images/All/all.jpg', description: 'Browse all our delicious pickles and other food items.'},
     { id: 'Veg pickles', name: 'Veg Pickles', icon: '/images/veg/veg1.jpg', description: 'Explore our wide range of authentic and delicious vegetarian pickles, crafted with traditional recipes and fresh ingredients. Perfect for adding a tangy kick to any meal!'},
     { id: 'Non veg pickles', name: 'Non-Veg Pickles', icon: '/images/Non-veg/Non-veg1.jpg', description: 'Discover our savory non-vegetarian pickles, made with high-quality meats and rich spices. A perfect accompaniment for a hearty meal.'},
     { id: 'Sweets', name: 'Sweets', icon: '/images/Sweets/swt1.jpg', description: 'Indulge in our delightful selection of traditional Indian sweets, handcrafted to perfection for your festive and daily cravings.'},
