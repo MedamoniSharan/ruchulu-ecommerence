@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { config } from '../config.js';
 
 // Create axios instance with default config
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  baseURL: config.API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
