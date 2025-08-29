@@ -2,7 +2,7 @@
 [build]
   base = "frontend"
   publish = "dist"
-  command = "npm run build"
+  command = "cd frontend && npm run build"
 
 # SPA routing redirects
 [[redirects]]
